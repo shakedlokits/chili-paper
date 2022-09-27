@@ -1,6 +1,5 @@
-import {Drawing} from "../../lib/drawing";
 import {makepuzzle} from "sudoku";
-import {P5, p5} from "../../lib/p5";
+import {P5, p5, Drawing} from "chili-paper";
 
 const youngSerifFont = p5.loadFont('YoungSerif-Regular.otf');
 
