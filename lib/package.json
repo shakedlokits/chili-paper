@@ -1,8 +1,7 @@
 {
   "name": "chili-paper",
   "version": "1.0.0",
-  "private": true,
-  "description": "",
+  "description": "Turn every thermal printer into a customizable digital printer! Use it for generative art, ticketing systems or anything you can think of.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -22,12 +21,9 @@
   },
   "homepage": "https://github.com/shakedlokits/chili-paper#readme",
   "dependencies": {
-    "@hebcal/core": "^3.44.2",
-    "axios": "^0.27.2",
     "escpos": "^3.0.0-alpha.6",
     "escpos-usb": "^3.0.0-alpha.4",
     "node-p5": "^1.0.4",
-    "sudoku": "^0.0.3",
     "usb": "^1.9.2"
   },
   "devDependencies": {

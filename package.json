@@ -1,10 +1,12 @@
 {
   "name": "chili-paper-workspace",
+  "private": "true",
   "workspaces": [
-    "libs/*",
-    "example/*"
+    "lib",
+    "example"
   ],
   "scripts": {
-    "build": "npm run build --workspace='chili-paper'"
+    "build": "npm run build --workspace='chili-paper'",
+    "start:example": "npm run start --workspace='chili-paper-example'"
   }
 }

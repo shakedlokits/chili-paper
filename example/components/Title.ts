@@ -1,6 +1,5 @@
 import axios from "axios";
-import {Drawing} from "../../lib/drawing";
-import {P5, p5} from "../../lib/p5";
+import {Drawing, P5, p5} from "chili-paper";
 
 const youngSerifFont = p5.loadFont('YoungSerif-Regular.otf');
 
@@ -43,7 +42,7 @@ export class Title implements Drawing {
         this.timeOfDay = Title.getTimeOfDay();
     }
 
-    render(p5) {
+    render(p5: P5) {
         p5.textFont(youngSerifFont, 32);
         p5.text(`Good ${this.timeOfDay}!\nToday’s weather will be ${this.weather.condition} with ${this.weather.temperature} degrees `
             + `and the sun is expected to set at ${this.weather.sunset}.`, 0, 0, 400, 200);
