@@ -1,33 +1,10 @@
 {
-  "name": "geekcon-2023",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "name": "chili-paper-workspace",
+  "workspaces": [
+    "libs/*",
+    "example/*"
+  ],
   "scripts": {
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shakedlokits/geekcon-2023.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shakedlokits/geekcon-2023/issues"
-  },
-  "homepage": "https://github.com/shakedlokits/geekcon-2023#readme",
-  "dependencies": {
-    "@hebcal/core": "^3.44.2",
-    "axios": "^0.27.2",
-    "escpos": "^3.0.0-alpha.6",
-    "escpos-usb": "^3.0.0-alpha.4",
-    "node-p5": "^1.0.4",
-    "sudoku": "^0.0.3",
-    "ts-node": "^10.9.1",
-    "usb": "^1.9.2"
-  },
-  "devDependencies": {
-    "@types/escpos": "^2.5.2",
-    "@types/p5": "^1.4.3"
+    "build": "npm run build --workspace='chili-paper'"
   }
 }
