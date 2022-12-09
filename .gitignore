@@ -11,6 +11,7 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea
 
 # AWS User-specific
 .idea/**/aws.xml
@@ -264,5 +265,8 @@ dist
 
 # Temporary files for generation scripts
 input.png
+
+# Fleet
+.fleet
 
 # End of https://www.toptal.com/developers/gitignore/api/node,intellij+all

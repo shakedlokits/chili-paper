@@ -1,4 +1,4 @@
-import type {P5} from "./p5";
+import type { P5 } from './p5';
 
 /**
  * Drawing is a class interface that represents a processing(p5.js)
@@ -20,24 +20,24 @@ import type {P5} from "./p5";
  * }
  */
 export interface Drawing {
-    /** The offset of the drawing from the top left corner of the canvas context.
-     * Note that each canvas context begins after the last drawing */
-    get offset(): { x: number, y: number };
+  /** The offset of the drawing from the top left corner of the canvas context.
+   * Note that each canvas context begins after the last drawing */
+  get offset(): { x: number, y: number };
 
-    /** The height of the drawing */
-    get height(): number;
+  /** The height of the drawing */
+  get height(): number;
 
-    /** The margin between the drawing and the next drawing */
-    get margin(): number;
+  /** The top margin between the drawing and the previous drawing */
+  get margin(): number;
 
-    /** A function that is called before the drawing is rendered.
-     * This function is called once for each drawing and is used to
-     * load any resources that are required for the drawing.
-     */
-    load(): Promise<void> | void;
+  /** A function that is called before the drawing is rendered.
+   * This function is called once for each drawing and is used to
+   * load any resources that are required for the drawing.
+   */
+  load(): Promise<void> | void;
 
-    /** A function that is called to render the drawing using the p5.js library.
-     * @param p5 - The p5.js library client
-     */
-    render(p5: P5): void;
+  /** A function that is called to render the drawing using the p5.js library.
+   * @param p5 - The p5.js library client
+   */
+  render(p5: P5): void;
 }

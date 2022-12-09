@@ -1,7 +1,10 @@
-import {Title, Sudoku} from "./components";
-import {print} from "../lib";
+import { Poem, Title } from './components';
+import { print } from '../lib';
 
-print([
+void print({
+  drawings: [
     new Title(),
-    // new Sudoku({width: 280, height: 280}),
-]).then(() => console.log('done'));
+    new Poem(),
+  ],
+  debug: true,
+});

@@ -1,2 +1,2 @@
-export {Sudoku} from "./Sudoku";
-export {Title} from "./Title";
+export { Title } from './Title';
+export { Poem } from './Poem';
