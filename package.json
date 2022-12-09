@@ -7,6 +7,8 @@
   ],
   "scripts": {
     "build": "npm run build --workspace='chili-paper'",
+    "version": "npm version patch --no-git-tag-version --workspace='chili-paper'",
+    "publish": "npm publish --workspace='chili-paper'",
     "start:example": "npm run start --workspace='chili-paper-example'"
   }
 }
