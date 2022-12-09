@@ -1,10 +1,11 @@
 {
   "name": "chili-paper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Turn every thermal printer into a customizable digital printer! Use it for generative art, ticketing systems or anything you can think of.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
+    "README.md",
     "dist"
   ],
   "scripts": {
